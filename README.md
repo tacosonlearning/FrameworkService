@@ -9,6 +9,11 @@ This repository demonstrates the following topics:
 - Enabling logging through the Microsoft.Extensions.Logging framework
 - Deploying the service as a Docker container
 
+## TODOs
+
+- [ ] Evaluate using the host as the entry point for the service.
+- [ ] Evaluate using the service as the entry point for the host.
+
 ## Prerequisites
 
 - .NET Framework 4.8
