@@ -3,4 +3,8 @@
     <TargetFramework>net48</TargetFramework>
     <OutputType>WinExe</OutputType>
   </PropertyGroup>
+
+  <ItemGroup Label="RequiredReferences">
+    <Reference Include="System.ServiceProcess" />
+  </ItemGroup>
 </Project>
