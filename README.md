@@ -36,3 +36,17 @@ Locate and open the `.csproj` file and remove everything. Replace it with the fo
   </PropertyGroup>
 </Project>
 ```
+
+Next, you'll need to remove the `Properties.AssemblyInfo` that the project template created. This is done by deleting the `AssemblyInfo.cs` file, though deleting the entire `Properties` folder is recommended.
+
+Finally, Windows Service projects require a reference to the `System.ServiceProcess` assembly. Add the following to the `.csproj` file:
+
+```xml
+<ItemGroup Label="RequiredReferences">
+  <Reference Include="System.ServiceProcess" />
+</ItemGroup>
+```
+
+The above snippet creates a new item group named `RequiredReferences`. While the label isn't required, it is recommended for organization purposes.
+
+**Note**: *The `App.config` file isn't required, so it may safely be deleted.*
